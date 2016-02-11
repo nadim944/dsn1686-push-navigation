@@ -26,6 +26,7 @@ body{
   &.noscript .toggle-btn{
       display: none;
   }
+  background-color: $dark-grey;
 }
 
 header {
@@ -55,7 +56,9 @@ header {
 			padding: .5em 1em;
 			border-bottom: 1px solid $light-grey;
 			text-decoration: none;
+          color: $white;
 		}
+      
 	}// li
 } // .navigation
 
@@ -71,6 +74,7 @@ header {
     display: inline-block;
     padding: 13px 11px;
     border: 1px solid $light-grey;
+      color: $red;
   }
 	span{
 		@include element-invisible;
