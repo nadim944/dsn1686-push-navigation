@@ -33,6 +33,7 @@ header {
   padding: 0 1em;
   position: relative;
   color: $red;
+  font-family: 'Roboto', sans-serif;
 }
 
 .toggle-btn{
@@ -56,7 +57,11 @@ header {
 			padding: .5em 1em;
 			border-bottom: 1px solid $light-grey;
 			text-decoration: none;
-          color: $white;
+            color: $white;
+          &:hover, &:active &:focus {
+            opacity: 0.2;
+        
+          }
 		}
       
 	}// li
@@ -74,7 +79,7 @@ header {
     display: inline-block;
     padding: 13px 11px;
     border: 1px solid $light-grey;
-      color: $red;
+    color: $red;
   }
 	span{
 		@include element-invisible;
@@ -131,6 +136,31 @@ header {
 	.close-btn{
 		display: none;
 	}
+}
+
+@media only screen and (min-width: 60em){
+	.toggle-btn,
+	.close-btn{
+		display: none;
+	}
+	.navigation ul {
+		display: inline-block;
+		position: absolute;
+		right: 3em;
+        top:2em;
+        color: $white;
+
+      li{
+		display: inline-block;
+		}
+      a{
+        font-size: .85em;
+        color: $white;
+        &:hover, &:active &:focus {
+        opacity: 0.2;
+        }
+      }
+    }
 }
 
 body.noscript .navigation{

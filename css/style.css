@@ -45,6 +45,7 @@ header {
   padding: 0 1em;
   position: relative;
   color: #cc0000;
+  font-family: 'Roboto', sans-serif;
 }
 
 .toggle-btn {
@@ -72,6 +73,10 @@ header {
   border-bottom: 1px solid #ccc;
   text-decoration: none;
   color: #fff;
+}
+
+.navigation li a:hover, .navigation li a:active .navigation li a:focus {
+  opacity: 0.2;
 }
 
 .toggle-btn,
@@ -147,6 +152,30 @@ header {
   .toggle-btn,
   .close-btn {
     display: none;
+  }
+}
+
+@media only screen and (min-width: 60em) {
+  .toggle-btn,
+  .close-btn {
+    display: none;
+  }
+  .navigation ul {
+    display: inline-block;
+    position: absolute;
+    right: 3em;
+    top: 2em;
+    color: #fff;
+  }
+  .navigation ul li {
+    display: inline-block;
+  }
+  .navigation ul a {
+    font-size: .85em;
+    color: #fff;
+  }
+  .navigation ul a:hover, .navigation ul a:active .navigation ul a:focus {
+    opacity: 0.2;
   }
 }
 
